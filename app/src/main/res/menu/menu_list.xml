@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Menu"
+        app:showAsAction="never"
+        android:id="@+id/menu">
+        <item
+            android:id="@+id/menuAdd"
+            android:title="Add"/>
+        <item
+            android:id="@+id/menuUser"
+            android:title="User"/>
+        <item
+            android:id="@+id/menuStopPoint"
+            android:title="Stop Points in System"/>
+        <item
+            android:id="@+id/menuSettings"
+            android:title="Settings"/>
+
+    </item>
+</menu>

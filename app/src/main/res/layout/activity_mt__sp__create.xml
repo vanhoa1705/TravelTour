@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateTour">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:padding="20dp">
+        <LinearLayout
+            android:id="@+id/linearListInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="@string/blank"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Choose on map..."
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arrive At"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_arriveAt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leave At"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_leaveAt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Type Id"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_service"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Min Cost"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_minCost"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max Cost"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/cr_maxCost"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/cr_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:text="@string/done"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+</LinearLayout>

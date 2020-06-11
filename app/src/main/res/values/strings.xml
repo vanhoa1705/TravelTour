@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">YourTour</string>
+    <string name="create_tour">Create Tour</string>
+    <string name="update_tour">Update Tour</string>
+    <string name="blank">""</string>
+    <string name="name">Name</string>
+    <string name="start_date">Tour Start Date</string>
+    <string name="end_date">Tour End Date</string>
+    <string name="source_lat">Latitude Of Source Place</string>
+    <string name="source_long">Longitude Of Source Place</string>
+    <string name="des_lat">Latitude Of Destination Place</string>
+    <string name="des_long">Longitude Of Destination Place</string>
+    <string name="private_tour">Private Tour</string>
+    <string name="done">Done</string>
+
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="fb">Facebook</string>
+    <string name="gg">Google</string>
+    <string name="register">Register</string>
+    <string name="forgot">Forgot Password ?</string>
+
+    <string name="add">Add</string>
+
+    <string name="facebook_app_id">531860240703575</string>
+    <string name="fb_login_protocol_scheme">fb531860240703575</string>
+
+</resources>

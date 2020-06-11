@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCreateTour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="2"
+        android:contentDescription="@android:string/no"
+        app:srcCompat="@mipmap/ic_logo" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_user"
+        android:ems="10"
+        android:hint="@string/user_name" />
+
+    <EditText
+        android:id="@+id/edtPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#D81B60"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnFB"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="#4267B2"
+            android:text="@string/fb"
+            android:textColor="#FFFF"
+            android:textSize="15sp">
+
+        </com.facebook.login.widget.LoginButton>
+
+        <Button
+            android:id="@+id/btnGG"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_rounded_corners"
+            android:backgroundTint="#4286F4"
+            android:text="@string/gg"
+            android:textColor="#FFFF"
+            android:textSize="15sp">
+
+        </Button>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_rounded_corners"
+        android:backgroundTint="#4286F4"
+        android:text="@string/register"
+        android:textColor="#FFFF"
+        android:textSize="20sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/forgot"
+        android:textColor="#1877f2"
+        android:textSize="20sp"/>
+
+</LinearLayout>

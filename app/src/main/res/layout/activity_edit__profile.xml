@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/inf_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+            <EditText
+                android:id="@+id/ep_Name"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="Name"
+                android:textSize="70px"
+                android:fontFamily="Times New Roman"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/ep_Email"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Email"
+                android:textSize="35px"
+                android:fontFamily="Times New Roman"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/ep_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Phone"
+                android:textSize="35px"
+                android:fontFamily="Times New Roman"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>
+<!--            <EditText-->
+<!--                android:id="@+id/ep_Address"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:hint="Address"-->
+<!--                android:textSize="35px"-->
+<!--                android:fontFamily="Times New Roman"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@android:color/black"/>-->
+            <EditText
+                android:id="@+id/ep_dob"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Day of birth: YYYY-MM-DD"
+                android:textSize="35px"
+                android:fontFamily="Times New Roman"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/ep_gender"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Gender: 0-Nam 1-Nữ"
+                android:textSize="35px"
+                android:fontFamily="Times New Roman"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/ep_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background= "@drawable/boder_register"
+            android:backgroundTint="#4286F4"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
